@@ -1,0 +1,995 @@
+@import url('https://fonts.googleapis.com/css2?family=Trochut:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Home Page*/
+
+body {
+    font-family: Arial, sans-serif;
+/*    background-color: #f8f8f8;*/
+    color: #333;
+    line-height: 1.6;
+    background-image: url('like-thumb-cafe.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    opacity: 0.9;
+    background-color: rgb(150, 194, 199);
+    color: #3D2B1F;
+    padding: 10px;
+    text-align: left;
+}
+
+header h1{
+    font-size: 60px;
+    font-family: "Trochut", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    padding: 20px;
+}
+
+.bento-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+    grid-template-areas:
+        "box1 box3 box2"
+        "box4 box3 box5";
+}
+
+.bento-box a {
+    opacity: 0.95;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Trochut", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#3D2B1F;
+    background-color: rgb(243, 202, 174, 1.0);
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+}
+
+.bento-box a:hover {
+    background-color: #F3BC94;
+}
+
+.box1 {
+    grid-area: box1;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.box4 {
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box3 img {
+    max-height: 100%;
+    width: 570px;
+    margin-top: 40px; 
+}
+
+.time-box{
+    opacity: 0.85;
+     background-color: rgb(243, 202, 174, 1.0); 
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute; 
+    bottom: 60px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin-top: -15px; 
+}
+
+.time {
+    color: #3D2B1F;
+    font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    padding: 10px;
+    font-size: 20px;
+/*    text-align: center;*/
+}
+
+.time-address{
+    color: #3D2B1F;
+    font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.time-contact{
+    color: #3D2B1F;
+    font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    padding: 10px;
+    font-size: 12px;
+}
+
+footer {
+    opacity: 0.9;
+    background-color: rgb(150, 194, 199);
+    color:#3D2B1F;
+    font-size: 15px;
+    font-family: "Trochut", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 35px;
+    text-align: center;
+}
+/*Home Page End*/
+
+/*Special Page*/
+
+.bento-box2 {
+    margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.spec-box1:hover{
+  background-color: #F3BC94;
+}
+
+.spec-box2:hover{
+   background-color: #F3BC94; 
+}
+
+.spec-box3:hover{
+    background-color: #F3BC94;
+}
+
+.spec-box1,
+.spec-box2,
+.spec-box3 {
+
+  opacity: 0.95;
+  text-decoration: none;
+  font-size: 10px;
+  font-family: "Trochut", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3D2B1F;
+  background-color: rgb(243, 202, 174, 1.0);
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+  display: flex;
+  padding-right: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; 
+  height: 400px; 
+  width: 400px; 
+  margin: 0 auto; 
+}
+
+.spec-box2,
+.spec-box3{
+    position: relative;
+}
+
+.spec-box1 h2 {
+    font-size: 40px;
+}
+
+.spec-box2 h2,
+.spec-box3 h2 {
+    color: #3D2B1F;
+   position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-size: 27px;
+  margin-top: -150px; 
+  text-align: center; 
+}
+
+
+.spec-box2 p,
+.spec-box3 p{
+    color: #3D2B1F;
+    font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+.spec-box3 img {
+  width: 70%;
+  max-height: 100%;
+  transition: transform 0.6s ease;
+}
+
+.spec-box2 img{
+    width: 75%;
+  max-height: 100%;
+  transition: transform 0.6s ease;
+}
+
+
+
+/* Flip effect styles */
+.flip-container {
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-container .flipper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.flip-container .flipper .front,
+.flip-container .flipper .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+}
+
+.flip-container .flipper .front {
+  z-index: 2;
+}
+
+.flip-container .flipper .back {
+  transform: rotateY(180deg);
+}
+
+.flip-container.flip .flipper {
+  transform: rotateY(180deg);
+}
+
+.spec-foot {
+  text-align: center;
+  margin-top: 110px; 
+}
+
+/*Special Page End*/
+
+/*Menu Page*/
+.bento-box3 {
+    display: grid;
+    grid-template-rows: auto auto; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container1,
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-box1 {
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.menu-box2 {
+    grid-area: 1 / 2 / 2 / 3; 
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-box3 {
+    grid-area: 1 / 3 / 2 / 4; 
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-box4 {
+    grid-area: 1 / 4 / 2 / 5; 
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-box8 {
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+.menu-box5 {
+    grid-area: 2 / 2 / 3 / 3;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-box6 {
+    grid-area: 2 / 3 / 3 / 4; 
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-box7 {
+    grid-area: 2 / 4 / 3 / 5; 
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-box1,
+.menu-box2,
+.menu-box3,
+.menu-box4,
+.menu-box5,
+.menu-box6,
+.menu-box7,
+.menu-box8 {
+    font-size: 21px;
+  font-family: "Trochut", sans-serif;
+  font-weight: 400; 
+    opacity: 0.95;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3D2B1F;
+    background-color: rgb(243, 202, 174);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 300px; 
+    position: relative; 
+}
+
+.menu-box1 img,
+.menu-box2 img,
+.menu-box3 img,
+.menu-box4 img,
+.menu-box5 img,
+.menu-box6 img,
+.menu-box7 img,
+.menu-box8 img{
+    max-height: 100%;
+    width: 45%;
+    object-fit: contain;
+}
+
+.menu-box1:hover{
+     background-color: #F3BC94;
+}
+
+.menu-box8:hover{
+     background-color: #F3BC94;
+}
+
+.menu-box2 .menu-front,
+.menu-box3 .menu-front,
+.menu-box4 .menu-front,
+.menu-box5 .menu-front,
+.menu-box6 .menu-front,
+.menu-box7 .menu-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 202, 174, 0.95);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.menu-box2 .menu-front img,
+.menu-box3 .menu-front img,
+.menu-box4 .menu-front img,
+.menu-box5 .menu-front img,
+.menu-box6 .menu-front img,
+.menu-box7 .menu-front img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.menu-box2.enlarged,
+.menu-box3.enlarged,
+.menu-box4.enlarged,
+.menu-box5.enlarged,
+.menu-box6.enlarged,
+.menu-box7.enlarged {
+    width: 400px; 
+    height: 350px; 
+    grid-area: auto; 
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; 
+    z-index: 1; 
+}
+
+.menu-front p.hidden {
+    opacity: 0;
+    display: none;
+}
+
+.menu-box2.enlarged .menu-front,
+.menu-box3.enlarged .menu-front,
+.menu-box4.enlarged .menu-front,
+.menu-box5.enlarged .menu-front,
+.menu-box6.enlarged .menu-front,
+.menu-box7.enlarged .menu-front {
+    position: static;
+    width: calc(100% - 220px);
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+}
+
+.menu-box2.enlarged .menu-front p.hidden,
+.menu-box3.enlarged .menu-front p.hidden,
+.menu-box4.enlarged .menu-front p.hidden,
+.menu-box5.enlarged .menu-front p.hidden,
+.menu-box6.enlarged .menu-front p.hidden,
+.menu-box7.enlarged .menu-front p.hidden {
+    display: block;
+}
+
+.menu-box2.enlarged .menu-front img,
+.menu-box3.enlarged .menu-front img,
+.menu-box4.enlarged .menu-front img,
+.menu-box5.enlarged .menu-front img,
+.menu-box6.enlarged .menu-front img,
+.menu-box7.enlarged .menu-front img {
+    width: 180px;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 0 auto; 
+}
+
+.menu-box2.enlarged .menu-front h2,
+.menu-box3.enlarged .menu-front h2,
+.menu-box4.enlarged .menu-front h2,
+.menu-box5.enlarged .menu-front h2,
+.menu-box6.enlarged .menu-front h2,
+.menu-box7.enlarged .menu-front h2{
+    color: #3D2B1F;
+   font-size: 21px;
+  font-family: "Trochut", sans-serif;
+  font-weight: 400; 
+} 
+
+.menu-box2.enlarged .menu-back p,
+.menu-box3.enlarged .menu-back p,
+.menu-box4.enlarged .menu-back p,
+.menu-box5.enlarged .menu-back p,
+.menu-box6.enlarged .menu-back p,
+.menu-box7.enlarged .menu-back p {
+    color: #3D2B1F;
+    font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    text-align: justify;
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+.menu-box2:hover .menu-front,
+.menu-box3:hover .menu-front,
+.menu-box4:hover .menu-front,
+.menu-box5:hover .menu-front,
+.menu-box6:hover .menu-front,
+.menu-box7:hover .menu-front,
+.menu-box8:hover .menu-front {
+    background-color: #F3BC94;
+}
+
+/*Drinks Page*/
+
+.bento-box4 {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container3,
+.container4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drink-box1 {
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.drink-box2 {
+    grid-area: 1 / 2 / 2 / 3; 
+    position: relative;
+    overflow: hidden;
+}
+
+.drink-box3 {
+    grid-area: 1 / 3 / 2 / 4; 
+    position: relative;
+    overflow: hidden;
+}
+
+.drink-box4 {
+    grid-area: 1 / 4 / 2 / 5; 
+    position: relative;
+    overflow: hidden;
+}
+
+.drink-box5 {
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+.drink-box6 {
+    grid-area: 2 / 2 / 3 / 3;
+    position: relative;
+    overflow: hidden;
+}
+
+.drink-box7 {
+    grid-area: 2 / 3 / 3 / 4; 
+    position: relative;
+    overflow: hidden;
+}
+
+.drink-box8 {
+    grid-area: 2 / 4 / 3 / 5; 
+    position: relative;
+    overflow: hidden;
+}
+
+.drink-box1,
+.drink-box2,
+.drink-box3,
+.drink-box4,
+.drink-box5,
+.drink-box6,
+.drink-box7,
+.drink-box8 {
+    font-size: 21px;
+  font-family: "Trochut", sans-serif;
+  font-weight: 400; 
+    opacity: 0.95;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3D2B1F;
+    background-color: rgb(243, 202, 174);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 300px; 
+    position: relative; 
+}
+
+.drink-box1 img,
+.drink-box2 img,
+.drink-box3 img,
+.drink-box4 img,
+.drink-box5 img,
+.drink-box6 img,
+.drink-box7 img,
+.drink-box8 img{
+    max-height: 100%;
+    width: 45%;
+    object-fit: contain;
+}
+
+.drinks-box1:hover{
+     background-color: #F3BC94;
+}
+
+.drinks-box5:hover{
+     background-color: #F3BC94;
+}
+
+.drink-box2 .drink-front,
+.drink-box3 .drink-front,
+.drink-box4 .drink-front,
+.drink-box6 .drink-front,
+.drink-box7 .drink-front,
+.drink-box8 .drink-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 202, 174, 0.95);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.drink-box2 .drink-front img,
+.drink-box3 .drink-front img,
+.drink-box4 .drink-front img,
+.drink-box6 .drink-front img,
+.drink-box7 .drink-front img,
+.drink-box8 .drink-front img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.drink-box2.enlarged,
+.drink-box3.enlarged,
+.drink-box4.enlarged,
+.drink-box6.enlarged,
+.drink-box7.enlarged,
+.drink-box8.enlarged {
+    width: 400px; 
+    height: 350px; 
+    grid-area: auto; 
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; 
+    z-index: 1; 
+}
+
+.drink-front p.hidden {
+    opacity: 0;
+    display: none;
+}
+
+.drink-box2.enlarged .drink-front,
+.drink-box3.enlarged .drink-front,
+.drink-box4.enlarged .drink-front,
+.drink-box6.enlarged .drink-front,
+.drink-box7.enlarged .drinku-front,
+.drink-box8.enlarged .drink-front {
+    position: static;
+    width: calc(100% - 220px);
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+}
+
+.drink-box2.enlarged .drink-front p.hidden,
+.drink-box3.enlarged .drink-front p.hidden,
+.drink-box4.enlarged .drink-front p.hidden,
+.drink-box6.enlarged .drink-front p.hidden,
+.drink-box7.enlarged .drink-front p.hidden,
+.drink-box8.enlarged .drink-front p.hidden {
+    display: block;
+}
+
+.drink-box2.enlarged .drink-front img,
+.drink-box3.enlarged .drink-front img,
+.drink-box4.enlarged .drink-front img,
+.drink-box6.enlarged .drink-front img,
+.drink-box7.enlarged .drink-front img,
+.drink-box8.enlarged .drink-front img {
+    width: 180px;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 0 auto; 
+}
+
+.drink-box2.enlarged .drink-front h2,
+.drink-box3.enlarged .drink-front h2,
+.drink-box4.enlarged .drink-front h2,
+.drink-box6.enlarged .drink-front h2,
+.drink-box7.enlarged .drink-front h2,
+.drink-box8.enlarged .drink-front h2{
+   font-size: 21px;
+  font-family: "Trochut", sans-serif;
+  font-weight: 400; 
+} 
+
+.drink-box2.enlarged .drink-back p,
+.drink-box3.enlarged .drink-back p,
+.drink-box4.enlarged .drink-back p,
+.drink-box6.enlarged .drinku-back p,
+.drink-box7.enlarged .drink-back p,
+.drink-box8.enlarged .drink-back p {
+    color: #3D2B1F;
+    font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    text-align: justify;
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+.drink-box6.enlarged .drink-back p {
+    color: #3D2B1F;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+.drink-box7.enlarged .drink-front,
+.drink-box7.enlarged .drink-back {
+    width: calc(100% - 220px);
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+}
+
+.drink-box7.enlarged .drink-front img {
+    width: 180px;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.drink-box7.enlarged .drink-front h2 {
+    color: #3D2B1F;
+    font-size: 21px;
+    font-family: "Trochut", sans-serif;
+    font-weight: 400;
+}
+
+.drink-box7.enlarged .drink-back p {
+    color: #3D2B1F;
+    right: 70px;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+
+.drink-box2:hover .drink-front,
+.drink-box3:hover .drink-front,
+.drink-box4:hover .drink-front,
+.drink-box5:hover .drink-front,
+.drink-box6:hover .drink-front,
+.drink-box7:hover .drink-front,
+.drink-box8:hover .drink-front {
+    background-color: #F3BC94;
+}
+
+/*Drinks Page End*/
+
+/*Rules Page */
+
+.bento-box5 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-items: center; 
+}
+
+.rules-box {
+  opacity: 0.95;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Trochut", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3D2B1F;
+  background-color: rgb(243, 202, 174, 1.0);
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 800px;
+  width: 1000px;
+  margin: 0 auto;
+  margin-right: 50px;
+}
+
+.rules-box1 {
+  opacity: 0.95;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Trochut", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3D2B1F;
+  background-color: rgb(243, 202, 174, 1.0);
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.rules-box p{
+    color: #3D2B1F;
+    font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+}
+
+.rules-foot {
+  text-align: center;
+  margin-top: 110px; 
+}
+
+
+.rules-box1:hover{
+    background-color: #F3BC94;
+}
+
+/*Rules Page End*/
+
+/*Our Story Page*/
+.bento-box6 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-items: center; 
+}
+
+.story-box {
+  opacity: 0.95;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Trochut", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3D2B1F;
+  background-color: rgb(243, 202, 174, 1.0);
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 500px;
+  width: 700px;
+  margin: 0 auto;
+  margin-right: 100px;
+}
+
+.story-box1 {
+  opacity: 0.95;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Trochut", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3D2B1F;
+  background-color: rgb(243, 202, 174, 1.0);
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.story-box p{
+    color: #3D2B1F;
+    font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+}
+
+.story-foot {
+  text-align: center;
+  margin-top: 110px; 
+}
+
+
+.story-box1:hover{
+    background-color: #F3BC94;
+}
+
+
+
+
